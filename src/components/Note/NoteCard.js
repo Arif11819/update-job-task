@@ -2,8 +2,6 @@ import React from 'react';
 import { MdDelete } from 'react-icons/md'
 import { FaEdit } from 'react-icons/fa'
 import useNotes from '../../hooks/useNotes';
-// import useNote from '../../hooks/useNote';
-// import { useParams } from 'react-router-dom';
 
 
 
@@ -12,9 +10,6 @@ const NoteCard = ({ note, setCard }) => {
     const { _id, name, role, date, noteDes } = note;
 
     const [notes, setNotes] = useNotes();
-
-    // const { cardId } = useParams()
-    // const [card, setCard] = useNote();
 
     const handleDelete = id => {
 
