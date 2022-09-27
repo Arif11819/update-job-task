@@ -18,8 +18,8 @@ const AddNotes = () => {
             .then(res => res.json())
             .then(data => {
                 if (data) {
-                    toast.success("Successfully create your note, scroll down and show this")
-                    reset()
+                    toast.success("Successfully create your note, scroll down and show this");
+                    reset();
                 }
             })
 
