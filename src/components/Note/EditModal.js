@@ -12,7 +12,7 @@ const DetailModal = ({ card }) => {
     const updateNote = (data) => {
 
         const id = _id;
-        const url = `http://localhost:5000/notes/${id}`;
+        const url = `https://blooming-fortress-88596.herokuapp.com/notes/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

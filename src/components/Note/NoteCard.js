@@ -13,7 +13,7 @@ const NoteCard = ({ note, setCard }) => {
 
     const handleDelete = id => {
 
-        const url = `http://localhost:5000/notes/${id}`;
+        const url = `https://blooming-fortress-88596.herokuapp.com/notes/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

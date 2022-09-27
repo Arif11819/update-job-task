@@ -3,7 +3,7 @@ const useNote = () => {
     const [card, setCard] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/notes`;
+        const url = `https://blooming-fortress-88596.herokuapp.com/notes`;
 
         fetch(url)
             .then(res => res.json())

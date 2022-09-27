@@ -15,7 +15,7 @@ const NoteShow = () => {
 
     const [notes, setNotes] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/notes?page=${page}&size=${size}`;
+        const url = `https://blooming-fortress-88596.herokuapp.com/notes?page=${page}&size=${size}`;
 
         fetch(url)
             .then(res => res.json())
@@ -23,7 +23,7 @@ const NoteShow = () => {
     }, [notes]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/noteCount')
+        fetch('https://blooming-fortress-88596.herokuapp.com/noteCount')
             .then(res => res.json())
             .then(data => {
                 const count = data.count;

@@ -8,7 +8,7 @@ const AddNotes = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = (data) => {
 
-        fetch('http://localhost:5000/notes', {
+        fetch('https://blooming-fortress-88596.herokuapp.com/notes', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
